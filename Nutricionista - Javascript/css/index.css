@@ -5,13 +5,21 @@
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	background-image: url("/img/fondo2.jpg");
+	background-size: cover;
 }
 
 header{
-	background-color: #333;
+	background-color: #42ab49;
 	height: 3em;
 	color: #FFF;
 	margin-bottom: 1em;
+	font-style:italic;
+	font-size: 16px;
+}
+
+.titulo{
+	margin-left: -8em;
 }
 
 header h1{
@@ -55,6 +63,7 @@ table{
 	width: 100%;
 	margin-bottom : .5em;
     table-layout: fixed;
+	background-color: #cfffca;
 
 }
 
@@ -105,8 +114,8 @@ button{
 	margin: 0;
 	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
+	background-color:#258d19;
+	border-color: #007b00;
 	width: 20%;
     display: block;
     clear: both;
@@ -135,4 +144,25 @@ button[disabled=disabled], button:disabled {
 
 .paciente-incorrecto{
 	background-color: lightcoral;
+}
+
+#mensajes-errores{
+	color: red;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabla{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+	border: #ccc;
+}
+
+.invisible{
+	display: none;
+	
 }

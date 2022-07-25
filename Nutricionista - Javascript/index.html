@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>Buona Vita Nutrición</title>
+		<title>Buena Vida Nutrición</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -12,12 +12,14 @@
 
 		<header>
 			<div class="container">
-				<h1 class="titulo">Buona Vita Nutrición</h1>
+				<h1 class="titulo">Buena Vida Nutrición</h1>
 			</div>
 		</header>
 		<main>
 			<section class="container">
 				<h2>Mis pacientes</h2>
+				<label for="filtrar-tabla"></label>
+				<input type="text" name="filtro" id="filtrar-tabla" placeholder=" Digite el nombre del paciente">
 				<table>
 					<thead>
 						<tr>
@@ -75,23 +77,23 @@
 
 		<section class="container">
 			<h2 id="titulo-form">Adicionar nuevo paciente</h2>
-			<span id="mensaje-error"></span>
+			<ul id="mensajes-errores"></ul>
 			<form id="form-adicionar">
 				<div class="grupo">
 					<label for="nombre">Nombre:</label>
-					<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo">
+					<input id="nombre" name="nombre" type="text" placeholder="Digite el nombre del paciente" class="campo">
 				</div>
 				<div class="grupo">
 					<label for="peso">Peso:</label>
-					<input id="peso" name="peso" type="text" placeholder="digite el peso del paciente" class="campo campo-medio">
+					<input id="peso" name="peso" type="text" placeholder="Digite el peso del paciente" class="campo campo-medio">
 				</div>
 				<div class="grupo">
 					<label for="altura">Altura:</label>
-					<input id="altura" name="altura" type="text" placeholder="digite la altura del paciente" class="campo campo-medio">
+					<input id="altura" name="altura" type="text" placeholder="Digite la altura del paciente" class="campo campo-medio">
 				</div>
 				<div class="grupo">
 					<label for="gordura">% de Gordura:</label>
-					<input id="gordura" type="text" placeholder="digite el porcentaje de gordura del paciente" class="campo campo-medio">
+					<input id="gordura" type="text" placeholder="Digite el porcentaje de gordura del paciente" class="campo campo-medio">
 				</div>
 				<button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
 			</form>
@@ -99,6 +101,8 @@
 
 		<script src="js/calcular-imc.js"></script>
 		<script src="js/form.js"></script>
+		<script src="js/eliminar-paciente.js"></script>
+		<script src="js/filtrar.js"></script>
 
 	</body>
 </html>
